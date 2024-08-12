@@ -1,9 +1,6 @@
 def _3palindrome():
     n = int(input())
-    l = ("a a b b " * n).split()
-    x = [l[i] for i in range(n)]
-    x = "".join(x)
-    print(x)
+    print("".join([("a a b b " * n).split()[i] for i in range(n)]))
 
 
 if __name__ == "__main__":
